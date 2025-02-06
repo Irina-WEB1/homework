@@ -1,0 +1,42 @@
+.some-text {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: justify;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.some-text-2 {
+    font-family: serif;
+    text-decoration: line-through;
+}
+
+.some-text-3 {
+    font-family: "Times New Roman", serif;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.some-text-4 {
+    color: blueviolet;
+    text-decoration: overline wavy;
+    word-spacing: 30px;
+
+
+}
+
+.some-text-5 {
+    letter-spacing: 5px;
+    text-decoration: underline double;
+}
+
+.some-text-6 {
+
+    font-family: "Mea Culpa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+}
