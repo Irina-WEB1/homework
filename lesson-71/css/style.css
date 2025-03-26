@@ -46,5 +46,5 @@ transform: translateX(-150px);
     border: 10px solid #fff;
     position: absolute;
     right: 0;
-    transform: translate(150px, -100px);
+    transform: translateX(150px);
 }
