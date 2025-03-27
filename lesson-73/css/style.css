@@ -71,7 +71,7 @@ animation-timing-function: linear;
     }
 
     100% {
-        left: calc(100%-200px);
+        left: calc(100% - 200px);
     }
 }
 
