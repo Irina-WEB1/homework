@@ -91,10 +91,8 @@ body {
 .rectangle {
     background: #f3f1f1;
     min-height: 100px;
-    width: 550px;
     border-radius: 10px 10px;
     position: fixed;
-    top: 70%;
     left: 50%;
     bottom: 100px;
     right: 50px;
