@@ -10,13 +10,16 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
     <div class="wrapper">
         <header class="header">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner">
-                        <img class="header__logo" src="img/icons/logos/logo-dark.svg" alt="Логотип Wake & Bake">
+                        <a class="header__logo" href="#">
+                            <img src="img/icons/logos/logo-dark.svg" alt="Логотип Wake & Bake">
+                        </a>
+<!-- превращаем изображение(логотип) в ссылку, чтобы его можно было использовать для возвращения на главную стр. -->
                         <nav class="nav">
                             <ul class="nav__list">
                                 <li class="nav__item">
@@ -41,6 +44,9 @@
                                 </li>
                             </ul>
                         </nav>
+                        <a class="burger-icon" href="#">
+                            <span></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -60,6 +66,14 @@
                                 За 8 практических занятий ты получишь новые возможности для самореализации и любимое
                                 дело
                             </p>
+                            <div class="hero__img-control hero__img-control--mobile">
+                                <a class="hero__img-button" data-fslightbox href="video/cake.mp4">
+                                    <!-- в нашу ссылку обязательно добавляем атрибут плагина js(data-fslightbox), чтобы плагин работал. Затем прописываем путь к нашему видео. -->
+                                    <img src="img/icons/play.svg" alt="">
+                                    <!-- - ничего в аlt не пишем,т.к не контентное изображение, просто иконка -->
+                                </a>
+                                Посмотри, как готовятся наши торты
+                            </div>
                             <a class="hero__button button" href="#">
                                 Записаться на курс
                             </a>
@@ -67,7 +81,7 @@
                         <div class="hero__img">
                             <img src="img/content/girl.png" alt="Девушка с тортом в руках">
                             <div class="hero__img-control">
-                                <a class="hero__img-button" data-fslightbox href="media/cake.mp4">
+                                <a class="hero__img-button" data-fslightbox="video" href="video/cake.mp4">
                                     <!-- в нашу ссылку обязательно добавляем атрибут плагина js(data-fslightbox), чтобы плагин работал. Затем прописываем путь к нашему видео. -->
                                     <img src="img/icons/play.svg" alt="">
                                     <!-- - ничего в аlt не пишем,т.к не контентное изображение, просто иконка -->
