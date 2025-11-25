@@ -1,0 +1,438 @@
+:root {
+    --general-text: #111;
+    --accent-text: #000;
+    --general-bg: #fff;
+    --accent-bg: #f8f8f8;
+
+    --accent-color: #c5358c;
+
+    /* --input-color: ;
+    /* --accent-color-2: #ababab; */
+    --transition: all .4s;
+    /* --border-radius: 20px;  */
+
+}
+
+.body {
+    /* font-family: "Open Sans", sans-serif;
+    line-height: 1.5; */
+    color: var(--general-text);
+    background: var(--general-bg);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+
+}
+
+.container {
+    max-width: 1390px;
+    margin: 0 280px;
+    padding: 0 15px;
+    height: 100%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    background: var(--accent-color);
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--general-bg);
+    padding: 15.5px 51.5px;
+    height: 64px;
+    width: 235px;
+}
+
+/* ------------------------------------------------- */
+
+.header {
+    /* background: url("../img/bg/header.png") 50% 100% / cover no-repeat; */
+}
+
+
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--general-text);
+    color: var(--general-bg);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1358px;
+
+
+}
+
+.burger-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-right: 50px;
+}
+
+.burger-icon path {
+    transition: var(--transition);
+}
+
+.burger-icon:hover path {
+    stroke: var(--accent-color);
+}
+
+.header__logo {
+    display: block;
+    max-width: 183px;
+    margin-right: 52px;
+}
+
+.header__logo img {
+    width: 100%;
+}
+
+
+
+.nav__list {
+    display: flex;
+    gap: 28px;
+    padding: 31px 0 35px;
+}
+
+.nav__item {
+    font-family: "NAMU Pro", sans-serif;
+    font-size: 20px;
+
+}
+
+.nav__link {
+    display: block;
+    padding: 5px 0;
+}
+
+.bag {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 19px 0 23px 50px;
+}
+
+.bag path {
+    transition: var(--transition);
+}
+
+.bag:hover path {
+    stroke: var(--accent-color);
+}
+
+/* ------------------------------------------------------------ */
+
+.banner {
+    background: url(../img/bg/banner\ .png) 50% 100% / cover no-repeat;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+}
+
+.banner__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.banner__content {
+    max-width: 556px;
+}
+
+.banner__title {
+    font-family: "NAMU Pro", sans-serif;
+    font-weight: 132;
+    font-size: 46px;
+    line-height: 1.03;
+    color: var(--general-text);
+    margin-bottom: 40px;
+}
+
+.banner__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.3;
+    color: var(--general-text);
+    margin-bottom: 90px;
+    max-width: 554px;
+}
+
+.banner__img {
+    max-width: 715px;
+    height: 850px;
+
+}
+
+/* --------------------------------- */
+.catalog {
+    margin-bottom: 150px;
+}
+
+.catalog__inner {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    gap: 20px;
+}
+
+.catalog__card {
+    border-radius: 10px;
+    box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.05), 0 4px 41px 0 rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+
+
+.card__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    width: 325px;
+    height: 130px;
+    transition: var(--transition);
+
+}
+
+.card__inner:hover {
+    border-radius: 0 0 10px 10px;
+    background-color: var(--general-text);
+
+}
+
+.card__content {
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.card__title {
+    font-family: "NAMU Pro", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--general-text);
+    max-width: 245px;
+    margin-bottom: 11px;
+    transition: var(--transition);
+}
+
+.card__title:hover {
+    color: var(--general-bg);
+}
+
+
+.card__down {
+    display: flex;
+}
+
+.card__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--general-text);
+    max-width: 132px;
+    margin-right: 20px;
+    transition: var(--transition);
+}
+
+.card__text:hover {
+    color: var(--general-bg);
+}
+
+.card__control {
+    margin-bottom: -14px;
+    width: 100%;
+    width: 24px;
+    height: 24px;
+
+}
+
+
+.card__control path,
+.card__control rect {
+    transition: var(--transition);
+}
+
+
+.card__control:hover path,
+.card__control:hover rect {
+    stroke: var(--general-bg);
+}
+
+
+
+/* ---------------------------------------------*/
+
+.main__opinion {
+    background: var(--accent-bg);
+    margin-bottom: 150px;
+}
+
+.opinion__inner {
+    display: flex;
+
+}
+
+.opinion__content {
+    margin-top: 150px;
+}
+
+.opinion__title {
+    font-family: "NAMU Pro", sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    color: var(--general-text);
+    margin-bottom: 40px;
+    width: 690px;
+}
+
+.opinion__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--accent-text);
+    width: 670px;
+}
+
+.opinion__img {
+    width: 100%;
+    margin-top: 150px;
+
+}
+
+/* ----------------------------------- */
+
+
+.advantage {}
+
+.advantage__inner {}
+
+.advantage__title {
+    font-family: "NAMU Pro", sans-serif;
+    font-weight: 500;
+    font-size: 42px;
+    color: var(--general-text);
+    margin-bottom: 60px;
+}
+
+.advantage__content {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 150px;
+}
+
+.advantage__card {
+    box-shadow: 0 4px 41px 0 rgba(0, 0, 0, 0.05);
+    background: var(--general-bg);
+    width: 440px;
+    height: 280px;
+    justify-items: center;
+    align-items: center;
+    padding: 26px 80px 46px;
+}
+
+.advantage__advant img {
+    margin-bottom: 15px;
+}
+
+.advantage__titletitle {
+    font-family: "NAMU Pro", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: var(--accent-text);
+    margin-bottom: 13px;
+
+}
+
+.advantage__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--accent-text);
+
+}
+
+
+/* ---------------------------------------------------- */
+
+
+.offers {
+    background: var(--accent-bg);
+    padding-top: 150px;
+}
+
+.offers__title {
+    font-family: "NAMU Pro", sans-serif;
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 1.1;
+    color: var(--general-text);
+    margin-bottom: 50px;
+}
+
+.offers__title span {
+    color: #c5358c;
+}
+
+.slider-container {
+    gap: 20px;
+    position: relative;
+    padding: 0 100px 0 0;
+
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--general-text);
+    border-radius: 31px;
+    height: 38px;
+
+}
+
+
+.item__link {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--general-text);
+    white-space: nowrap;
+}
+
+.swiper-button-next {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--accent-color);
+    width: 123px;
+    position: absolute;
+    text-decoration: underline;
+
+}
+
+.swiper-button-next svg {
+    display: none;
+}
